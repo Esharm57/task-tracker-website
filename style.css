@@ -1,0 +1,130 @@
+body {
+    font-family: "Roboto Mono";
+}
+
+.title {
+    font-size: 30px;
+    margin-left: 100px;
+}
+
+.taskContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    width: 700px;
+}
+
+.taskInputContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 700px;
+    margin-left: 75px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.taskInput {
+    width: 650px;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+.taskInput::placeholder {
+    color: rgb(208, 208, 208);
+}
+
+.taskInput:focus {
+    outline: none;
+}
+
+.addTask {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    padding-top: 3px;
+    padding-right: 3px;
+    padding-left: 4px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.addTask:hover, .checkboxButton:hover, .deleteButton:hover {
+    cursor: pointer;
+}
+
+.addTask:active {
+    background-color: rgb(231, 231, 231);
+}
+
+.addIcon {
+    height: 50px;
+}
+
+.taskIncompleteContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 700px;
+    border: 1px solid black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-left: 75px;
+}
+
+.taskCompleteContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 700px;
+    border: 1px solid black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-left: 75px;
+    border-top: none;
+}
+
+.taskComplete {
+    text-decoration: line-through;
+    color: lightgrey;
+}
+
+.task {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 700px;
+    border-top: 1px solid black;
+    font-size: 20px;
+}
+
+.checkboxButton, .deleteButton {
+    border: none;
+    background-color: transparent;
+    padding: 10px;
+}
+
+.checkboxButton {
+    margin-left: 10px;
+}
+
+.deleteButton {
+    margin-right: 10px;
+}
+
+.checkbox {
+    height: 20px;
+}
+
+.deleteIcon {
+    height: 25px;
+}
