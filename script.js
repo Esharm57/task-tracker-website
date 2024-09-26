@@ -1,5 +1,13 @@
 document.addEventListener('DOMContentLoaded', loadTasks);
 
+function taskEnter () {
+    document.addEventListener('keydown', function(event) {
+        if (event.keyCode === 13) {
+            taskAdd();
+        }
+    });
+}
+
 function taskAdd() {
     const taskInput = document.querySelector('.js-input');
     const task = taskInput.value;
